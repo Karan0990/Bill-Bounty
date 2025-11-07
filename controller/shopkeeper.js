@@ -6,12 +6,13 @@ const axios = require("axios")
 
 async function handleSignUp(req, res) {
     try {
-        const { firstName, lastName, email, password, address, location, phoneNumber, storeName, role } = req.body;
+        const { firstName, lastName, email, password, address, location, phoneNumber, storeName, role, gst } = req.body;
 
         const user = await Shopkeeper.create({
             firstName,
             lastName,
             email,
+            gst,
             password,
             address,
             location,
