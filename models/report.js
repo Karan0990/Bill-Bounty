@@ -20,6 +20,10 @@ const reportSchema = new Schema({
         require: true,
     },
 
+    billImage: {
+        type: String,
+        required: false,
+    }
 
 }, { timestamps: true })
 
